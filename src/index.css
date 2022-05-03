@@ -10,3 +10,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+.colorChange {
+	background-color: rgba(0, 0, 0, 0.3);
+}

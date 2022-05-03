@@ -21,7 +21,8 @@ export const RegionExperience = styled.div`
 	align-items: center;
 	text-align: center;
 
-	h2 {
+	h2,
+	.img-text {
 		font-weight: 600;
 		font-size: 40px;
 		letter-spacing: -0.02em;
@@ -29,6 +30,18 @@ export const RegionExperience = styled.div`
 
 		span {
 			color: #3e86f5;
+		}
+	}
+
+	.img-text {
+		position: relative;
+		width: 100%;
+
+		img {
+			position: absolute;
+			top: 50%;
+			right: 50%;
+			transform: translate(50%, -50%);
 		}
 	}
 

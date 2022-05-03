@@ -1,5 +1,6 @@
 import Experience from './components/Experience/Experience';
 import HeroContainer from './components/HeroContainer/HeroContainer';
+import Resort from './components/Resort/Resort';
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <HeroContainer />
       <Experience />
+      <Resort />
     </div>
   );
 }

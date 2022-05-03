@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar, Container, Nav, Form, Button } from 'react-bootstrap';
 import { NavbarCon } from './NavbarStyles';
 
 const NavbarComponent = () => {
+	const [colorChange, setColorchange] = useState(false);
+	const changeNavbarColor = () => {
+		if (window.scrollY >= 60) {
+			setColorchange(true);
+		} else {
+			setColorchange(false);
+		}
+	};
+	window.addEventListener('scroll', changeNavbarColor);
+
 	return (
-		<NavbarCon expand="lg" fixed="top">
+		<NavbarCon
+			expand="lg"
+			fixed="top"
+			className={
+				colorChange
+					? 'colorChange'
+					: 'navbar navbar-expand-lg navbar-light fixed-top'
+			}>
 			<Container>
 				<Navbar.Brand href="#">
 					<img src="/assets/travel-logo.png" alt="brand-logo" />

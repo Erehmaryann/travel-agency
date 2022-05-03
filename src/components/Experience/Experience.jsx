@@ -26,7 +26,10 @@ const Experience = () => {
 						Would you explore nature paradise in the world, find the best
 						destination in the world with us.
 					</p>
-					<h2>View Regions available</h2>
+					<div className="img-text">
+						View Regions available
+						<img src="/assets/blue-arrow.png" alt="blue-arrow" />
+					</div>
 				</RegionExperience>
 			</ExperienceContainer>
 			<Images>
