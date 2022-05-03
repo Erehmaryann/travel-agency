@@ -1,6 +1,8 @@
 import Experience from './components/Experience/Experience';
 import HeroContainer from './components/HeroContainer/HeroContainer';
 import Resort from './components/Resort/Resort';
+import Passes from './components/Passes/Passes';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
       <HeroContainer />
       <Experience />
       <Resort />
+      <Passes />
+      <Footer />
     </div>
   );
 }
